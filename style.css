@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: url(images/page-bg.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#header {
+	width: 100%;
+	height: 100vh;
+}
+
+#side {
+	width: 360px;
+	height: 100%;
+	background-color: rgba(201, 12, 72,0.7);
+	display: flex;
+	margin-left: 10%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	position: fixed;
+}
+
+.row-1 {
+	flex-basis: 40%;
+	position: relative;
+}
+.row-1 div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.row-1 div h2 {
+	margin-top: 20px;
+	font-size: 30px;
+}
+.row-2 {
+	flex-basis: 30%;
+	width: 100%;
+	text-align: center;
+}
+.row-2 a:first-child {
+	background-color:#fff;
+	color: rgba(201, 12, 72,0.7);
+}
+.row-2 a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	padding: 20px;
+	border-bottom: white 2px solid;
+}
+.row-2 a:hover {
+	background-color: #fff;
+	color: rgba(201, 12, 72,0.7);
+}
+.row-3 {
+	flex-basis: 20%;
+	position: relative;
+	width: 100%;
+}
+.icon-links {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.icon-links i {
+	font-size: 22px;
+	padding: 12px;
+	background-color: rgba(0,0,0,0.4);
+}
+.icon-links i:hover {
+	background-color: #fff;
+	color: rgba(201, 12, 72,0.7);
+}
+.row-4 {
+	flex-basis: 10%;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	border-top: #fff 2px solid;
+}
+.row-4 p {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+}
+
+#side img {
+	border-radius: 50%;
+}
+
+/*---- about me  -----*/
+
+#content {
+	color: white;
+	margin-left: 35%;
+}
+
+.aboutMe {
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutMe .aboutMe-row-1 {
+	width: 80%;
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.aboutMe .aboutMe-row-2 {
+	display: flex;
+}
