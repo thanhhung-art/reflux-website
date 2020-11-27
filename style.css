@@ -150,10 +150,12 @@ body {
 .about-me .row-1 h1 {
 	font-size: 30px;
 	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .about-me .row-1 {
-	height: 200px;
+	height: 12rem;
 }
 
 .about-me .row-1 div {
@@ -236,6 +238,7 @@ body {
 	margin-bottom: 10px;
 	font-size: 30px;
 	position: relative;
+	padding-bottom: 13px;
 }
 
 .what-i-am-good-at .title div {
