@@ -10,13 +10,24 @@ body {
 	background-attachment: fixed;
 }
 
+.btn {
+	width: 130px;
+	height: 40px;
+	color:  rgba(201, 12, 72,0.7);
+	background-color: #fff;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
 #header {
 	width: 100%;
 	height: 100vh;
 }
 
 #side {
-	width: 360px;
+	width: 340px;
 	height: 100%;
 	background-color: rgba(201, 12, 72,0.7);
 	display: flex;
@@ -110,22 +121,74 @@ body {
 
 /*---- about me  -----*/
 
-#content {
+#block_content {
 	color: white;
 	margin-left: 35%;
+	margin-right: 13%;
 }
 
-.aboutMe {
-	display: flex;
-	flex-direction: column;
+.about-me .row-1 h1 {
+	font-size: 40px;
 }
 
-.aboutMe .aboutMe-row-1 {
+.about-me .row-1 {
+	height: 200px;
+}
+
+.about-me .row-1 div {
 	width: 80%;
 	text-align: center;
-	padding: 50px 20px;
 }
 
-.aboutMe .aboutMe-row-2 {
+.about-me .row-2 {
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgb(90, 82, 82);
+	padding: 50px 0;
+}
+
+.about-me .row-3 {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 3px solid rgb(90, 82, 82);
+	padding: 50px 0;
+}
+
+.about-me .row-2 .img{
+	flex-basis: 48%;
+}
+
+.about-me .row-3 .img {
+	flex-basis: 48%;
+}
+
+.card-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.about-me .row-2 .content {
+	flex-basis: 48%;
+	text-align: left;
+	padding-top: 50px;
+	
+}
+
+.about-me .row-3 .content {
+	flex-basis: 48%;
+	text-align: left;
+	padding-top: 50px;
+
+}
+
+.content h2 {
+	margin-bottom: 20px;
+}
+
+.content p {
+	margin-bottom: 20px;
+	font-size: 17px;
 }
