@@ -20,6 +20,10 @@ body {
 	font-weight: bold;
 }
 
+.title-main::before {
+	
+}
+
 
 #header {
 	width: 100%;
@@ -27,7 +31,7 @@ body {
 }
 
 #side {
-	width: 340px;
+	width: 20%;
 	height: 100%;
 	background-color: rgba(201, 12, 72,0.7);
 	display: flex;
@@ -92,8 +96,8 @@ body {
 }
 
 .icon-links i {
-	font-size: 22px;
-	padding: 12px;
+	font-size: 20px;
+	padding: 10px;
 	background-color: rgba(0,0,0,0.4);
 }
 .icon-links i:hover {
@@ -184,6 +188,10 @@ body {
 
 }
 
+.content {
+	position: relative;
+}
+
 .content h2 {
 	margin-bottom: 20px;
 }
@@ -191,4 +199,12 @@ body {
 .content p {
 	margin-bottom: 20px;
 	font-size: 17px;
+}
+
+.content div {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
