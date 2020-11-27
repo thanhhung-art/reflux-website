@@ -8,6 +8,7 @@ body {
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	font-family: 'Poppins', sans-serif;
 }
 
 .btn {
@@ -18,10 +19,25 @@ body {
 	border: none;
 	font-size: 16px;
 	font-weight: bold;
+	cursor: pointer;
+	transition: all .5s;
 }
 
-.title-main::before {
-	
+.btn:hover {
+	background-color: rgba(201, 12, 72);
+	color: #fff;
+}
+
+.title-main::after {
+	content: "";
+	width: 70px;
+	height: 3px;
+	background-color: red;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
@@ -132,7 +148,8 @@ body {
 }
 
 .about-me .row-1 h1 {
-	font-size: 40px;
+	font-size: 30px;
+	position: relative;
 }
 
 .about-me .row-1 {
@@ -149,7 +166,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	border-bottom: 1px solid rgb(90, 82, 82);
-	padding: 50px 0;
+	padding-bottom: 50px;
 }
 
 .about-me .row-3 {
@@ -198,7 +215,7 @@ body {
 
 .content p {
 	margin-bottom: 20px;
-	font-size: 17px;
+	font-size: 14px;
 }
 
 .content div {
@@ -207,4 +224,53 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/* What i'm good at */
+
+.what-i-am-good-at .title {
+	text-align: center;
+}
+
+.what-i-am-good-at .title h1 {
+	margin-bottom: 10px;
+	font-size: 30px;
+	position: relative;
+}
+
+.what-i-am-good-at .title div {
+	margin: 3rem;
+}
+
+.what-i-am-good-at .sub {
+	padding-bottom: 3rem;
+	border-bottom: 3px solid rgb(90, 82, 82);
+	height: 36rem;
+}
+
+.what-i-am-good-at .container .card {
+	background-color: rgba(255, 255, 255, 0.1);
+	float: left;
+	width: 48%;
+	margin: 5px;
+	height: 250px;
+	transition: all 1s;
+}
+
+.what-i-am-good-at .container .card:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.what-i-am-good-at .container .card:hover .fas, .what-i-am-good-at .container .card:hover .far {
+	color:  rgba(201, 12, 72);
+}
+
+.what-i-am-good-at .container .card div {
+	margin: 10px;
+}
+
+.what-i-am-good-at .fas, .what-i-am-good-at .far {
+	font-size: 40px;
+	margin: 30px 10px;
 }
