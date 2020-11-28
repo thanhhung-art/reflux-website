@@ -28,6 +28,10 @@ body {
 	color: #fff;
 }
 
+.title-main {
+	font-size: 30px;
+}
+
 .title-main::after {
 	content: "";
 	width: 70px;
@@ -277,3 +281,4 @@ body {
 	font-size: 40px;
 	margin: 30px 10px;
 }
+
