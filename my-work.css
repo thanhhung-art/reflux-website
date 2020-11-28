@@ -38,7 +38,12 @@
 .my-work .container {
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-gap: 20px 20px;
+	grid-gap: 20px 30px;
+}
+
+.my-work .container .block-img {
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgb(90, 82, 82);
 }
 
 .my-work .img {

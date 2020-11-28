@@ -147,64 +147,84 @@
 
 					
 					<div class="container">
-
-						<div class="img img-1" style="background-image: url(images/portfolio-01.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-1" style="background-image: url(images/portfolio-01.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="img img-2" style="background-image: url(images/portfolio-02.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-2" style="background-image: url(images/portfolio-02.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="img img-3" style="background-image: url(images/portfolio-03.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-3" style="background-image: url(images/portfolio-03.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="img img-4" style="background-image: url(images/portfolio-04.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-4" style="background-image: url(images/portfolio-04.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="img img-5" style="background-image: url(images/portfolio-05.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-5" style="background-image: url(images/portfolio-05.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="img img-6" style="background-image: url(images/portfolio-06.jpg)">
-							<div class="figure">
-								<div>
-									<i class="fas fa-search"></i>
-									<h2>First title</h2>
-									<small>Customize anything</small>
+						<div class="block-img">
+							<div class="img img-6" style="background-image: url(images/portfolio-06.jpg)">
+								<div class="figure">
+									<div>
+										<i class="fas fa-search"></i>
+										<h2>First title</h2>
+										<small>Customize anything</small>
+									</div>
 								</div>
 							</div>
+	
 						</div>
-
+						
 					</div>
 				
+			</div>
+
+			<div class="contact-me">
+				<div class="title">
+					<h1>Contact Me</h1>
+					<p>Fusce eget nibh nec justo interdum condimentum. Morbi justo ex, efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor sit amet, 
+						consectetur adipiscing elit.</p>
+				</div>
 			</div>
 
 		</div>
@@ -219,21 +239,25 @@
 							img.map( item => {
 								item.style.display = "inline";
 							})
+							break;
 						case people:
 							let newArr1 = img.filter( item => item != img2 && img4 );
 							newArr.map( item => {
 								item.style.display = "none";
 							})
+							break;
 						case nature:
 							let newArr2 = img.filter( item => item != img1 && img5);
 							newArr.map( item => {
 								item.style.display = "none";
 							})
+							break;
 						case animals:
 							let newArr3 = img.filter( item => item != img3 && img6);
 							newArr.map( item => {
 								item.style.display = "none";
 							})
+							break;
 					}
 		}
 
@@ -262,7 +286,7 @@
 					newArr.map( item => {
 						item.classList.remove("select-item");
 					});
-					display(element);
+					display(this);
 				}
 			}
 		})
