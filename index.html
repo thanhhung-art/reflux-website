@@ -80,6 +80,8 @@
 				</div>
 			</div>
 
+			<!-- What i'm good at -->
+
 			<div class="what-i-am-good-at">
 				<div class="title">
 					<div>
@@ -128,6 +130,8 @@
 				</div>
 			</div>
 
+			<!-- My-work -->
+
 			<div class="my-work">
 				<div class="title">
 					<h1 class="title-main">My Work</h1>
@@ -135,16 +139,16 @@
 				</div>
 
 					<div class="span">
-						<span class="select-item">All</span>
-						<span>People</span>
-						<span>Nature</span>
-						<span>Animals</span>
+						<span class="all select-item">All</span>
+						<span class="people">People</span>
+						<span class="nature">Nature</span>
+						<span class="animals">Animals</span>
 					</div>
 
 					
 					<div class="container">
 
-						<div class="img" style="background-image: url(images/portfolio-01.jpg)">
+						<div class="img img-1" style="background-image: url(images/portfolio-01.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -153,7 +157,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="img" style="background-image: url(images/portfolio-02.jpg)">
+						<div class="img img-2" style="background-image: url(images/portfolio-02.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -162,7 +166,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="img" style="background-image: url(images/portfolio-03.jpg)">
+						<div class="img img-3" style="background-image: url(images/portfolio-03.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -171,7 +175,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="img" style="background-image: url(images/portfolio-04.jpg)">
+						<div class="img img-4" style="background-image: url(images/portfolio-04.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -180,7 +184,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="img" style="background-image: url(images/portfolio-05.jpg)">
+						<div class="img img-5" style="background-image: url(images/portfolio-05.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -189,7 +193,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="img" style="background-image: url(images/portfolio-06.jpg)">
+						<div class="img img-6" style="background-image: url(images/portfolio-06.jpg)">
 							<div class="figure">
 								<div>
 									<i class="fas fa-search"></i>
@@ -206,5 +210,62 @@
 		</div>
 
 	</section>
+
+	<script>
+
+		function display (a) {
+					switch(a){
+						case all: 
+							img.map( item => {
+								item.style.display = "inline";
+							})
+						case people:
+							let newArr1 = img.filter( item => item != img2 && img4 );
+							newArr.map( item => {
+								item.style.display = "none";
+							})
+						case nature:
+							let newArr2 = img.filter( item => item != img1 && img5);
+							newArr.map( item => {
+								item.style.display = "none";
+							})
+						case animals:
+							let newArr3 = img.filter( item => item != img3 && img6);
+							newArr.map( item => {
+								item.style.display = "none";
+							})
+					}
+		}
+
+		let all = document.querySelector(".all");
+		let people = document.querySelector(".people");
+		let nature = document.querySelector(".nature");
+		let animals = document.querySelector(".animals");
+		let img1 = document.querySelector(".img-1");
+		let img2 = document.querySelector(".img-2");
+		let img3 = document.querySelector(".img-3");
+		let img4 = document.querySelector(".img-4");
+		let img5 = document.querySelector(".img-5");
+		let img6 = document.querySelector(".img-6");
+				
+		let array = [all,people,nature,animals];
+		let img = [img1, img2, img3, img4, img5, img6];
+
+		array.forEach( element => {
+			element.onclick = () => {
+				if(element.classList.contains("select-item")){
+					
+				}
+				else{
+					element.classList.add("select-item");
+					let newArr =  array.filter( item  => item != element );
+					newArr.map( item => {
+						item.classList.remove("select-item");
+					});
+					display(element);
+				}
+			}
+		})
+	</script>
 </body>
 </html>
