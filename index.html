@@ -51,7 +51,7 @@
 							<p>This is a CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</p>
 						</div>
 					</div>
-	
+
 					<div class="row-2">
 						<div class="img">
 							<img src="images/left-image.jpg" class="card-image">
@@ -65,7 +65,7 @@
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="row-3">
 						<div class="content">
 							<div>
@@ -81,8 +81,9 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<!-- What i'm good at -->
+			
 			<section id="what-i-am-good-at">
 				<div class="what-i-am-good-at">
 					<div class="title">
@@ -92,66 +93,66 @@
 							Donec eget massa ante.</p>
 						</div>
 					</div>
-	
+
 					<div class="sub container">
 						<div class="card">
 							<div>
 								<i class="far fa-lightbulb"></i>
 								<h2>HTML5 & CSS3</h2>
-								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.  
+								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.
 								eros.</p>
 							</div>
-							
+
 						</div>
 						<div class=card>
 							<div>
 								<i class="fas fa-code"></i>
 								<h2>Creative Ideas</h2>
-								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.  
+								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.
 								eget eros.</p>
 							</div>
-							
+
 						</div>
 						<div class="card">
 							<div>
 								<i class="fas fa-cog"></i>
 								<h2>Easy Customize</h2>
-								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. 
+								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.
 								eget eros.</p>
 							</div>
-							
+
 						</div>
 						<div class="card">
 							<div>
 								<i class="fas fa-project-diagram"></i>
 								<h2>Admin Dashboard</h2>
-								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. 
+								<p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum.
 									eget eros.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<!-- My-work -->
-			
+
 			<section id="my-work">
 				<div class="my-work">
 					<div class="title">
 						<h1 class="title-main">My Work</h1>
 						<p>Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.</p>
 					</div>
-	
+
 						<div class="span">
 							<span class="all select-item">All</span>
 							<span class="people">People</span>
 							<span class="nature">Nature</span>
 							<span class="animals">Animals</span>
 						</div>
-	
-						
+
+
 						<div class="container">
-	
+
 							<div class="block-img">
 								<div class="img img-1" style="background-image: url(images/portfolio-01.jpg)">
 									<div class="figure">
@@ -218,18 +219,19 @@
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
-					
+
 				</div>
 			</section>
-			
+
 			<!-- contact me -->
+
 			<section id="contact-me">
 				<div class="contact-me">
 					<div class="title">
 						<h1 class="title-main">Contact Me</h1>
-						<p>Fusce eget nibh nec justo interdum condimentum. Morbi justo ex, efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor sit amet, 
+						<p>Fusce eget nibh nec justo interdum condimentum. Morbi justo ex, efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor sit amet,
 							consectetur adipiscing elit.</p>
 					</div>
 					<div class="wrap-form form">
@@ -237,7 +239,7 @@
 							<div class="container">
 								<div class="input-name-email">
 									<input type="text" placeholder="Your Name..." id="input-name">
-									
+
 									<input type="text" placeholder="Your Email..." id="input-email">
 								</div>
 								<div class="input-subject">
@@ -253,16 +255,16 @@
 						</form>
 					</div>
 				</div>
-			</div>	
+			</div>
 			</section>
-			
+
 	</section>
 
 	<script>
 
 		function display (a) {
 					switch(a){
-						case all: 
+						case all:
 							img.map( item => {
 								item.style.display = "inline";
 							})
@@ -298,14 +300,14 @@
 		let img4 = document.querySelector(".img-4");
 		let img5 = document.querySelector(".img-5");
 		let img6 = document.querySelector(".img-6");
-				
+
 		let array = [all,people,nature,animals];
 		let img = [img1, img2, img3, img4, img5, img6];
 
 		array.forEach( element => {
 			element.onclick = () => {
 				if(element.classList.contains("select-item")){
-					
+
 				}
 				else{
 					element.classList.add("select-item");
